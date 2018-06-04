@@ -13,7 +13,7 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
     display_board(board)
-  else
+  elsif !valid_move?(board)
     puts "This is an invalid entry."
     turn(board)
   end
